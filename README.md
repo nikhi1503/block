@@ -4,10 +4,10 @@
 
 **_Empowering Trust, Securing Donations, Transforming Temples_**
 
-![Last Commit](https://img.shields.io/github/last-commit/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=for-the-badge&logo=github&logoColor=white)
-![TypeScript Usage](https://img.shields.io/github/languages/top/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=for-the-badge&logo=typescript&logoColor=white)
-![Languages Count](https://img.shields.io/github/languages/count/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=for-the-badge&logo=polyglot&logoColor=white)
-![Contributors](https://img.shields.io/github/contributors/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=for-the-badge&logo=people&logoColor=white)
+![Last Commit](https://img.shields.io/github/last-commit/nikhi1503/block?style=for-the-badge&logo=github&logoColor=white)
+![TypeScript Usage](https://img.shields.io/github/languages/top/nikhi1503/block?style=for-the-badge&logo=typescript&logoColor=white)
+![Languages Count](https://img.shields.io/github/languages/count/nikhi1503/block?style=for-the-badge&logo=polyglot&logoColor=white)
+![Contributors](https://img.shields.io/github/contributors/nikhi1503/block?style=for-the-badge&logo=people&logoColor=white)
 
 
 **_Built with the tools and technologies:_**
@@ -118,7 +118,7 @@ Build Blockchain-Based-Fund-Management-System-For-Indian-Temples from the source
 
 #### Clone the repository:
 ```bash
-git clone https://github.com/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples.git
+git clone https://github.com/nikhi1503/block
 ```
 
 #### Navigate to the project directory:
@@ -191,36 +191,32 @@ npm run dev
 ## Team
 This project was developed collaboratively by:
 
-- **Saurabh Vaidya** (Me)
-- **Gaurav Rai**
-- **Shreya Shirbhate**
-- **Rajnandan Rai**
+- **Hrathik**
+- **Girirsh**
+- **Nikhil**
 
-## My Contribution
+## Contributors
 
-### 👤 **Saurabh Vaidya (Me)**
-
-- Led the development and coordination of the project.
-- Designed the database architecture and implemented all database operations.
-- Developed the complete backend, including API development and business logic.
-- Implemented authentication and authorization systems using JWT.
-- Integrated the backend seamlessly with the frontend (Next.js).
-- Contributed to the design and development of smart contracts alongside the blockchain team.
-- Managed project timelines, task allocation, and ensured successful delivery of project milestones.
+All contributors have worked collaboratively on:
+- Frontend development with Next.js and TypeScript
+- Backend development with Node.js and Express
+- Smart contract development and blockchain integration
+- Database design and implementation
+- Testing and deployment
 
 
 ## License
-This project is licensed under the MIT License © 2025 Saurabh Vaidya.  
+This project is licensed under the MIT License © 2025.  
 See the [LICENSE](./LICENSE) file for details.
 
 ## Badges
-[![Open in Visual Studio Code](https://img.shields.io/badge/Open%20in-VSCode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](https://open.vscode.dev/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples)
-![Forks](https://img.shields.io/github/forks/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=flat-square)
-![Stars](https://img.shields.io/github/stars/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=flat-square)
-![GitHub license](https://img.shields.io/github/license/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=flat-square)
-![Issues](https://img.shields.io/github/issues/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=flat-square)
-![Pull Requests](https://img.shields.io/github/issues-pr/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=flat-square)
-![Repo Size](https://img.shields.io/github/repo-size/saurabh7071/Blockchain-Based-Fund-Management-System-For-Indian-Temples?style=flat-square)
+[![Open in Visual Studio Code](https://img.shields.io/badge/Open%20in-VSCode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](https://open.vscode.dev/nikhi1503/block)
+![Forks](https://img.shields.io/github/forks/nikhi1503/block?style=flat-square)
+![Stars](https://img.shields.io/github/stars/nikhi1503/block?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/nikhi1503/block?style=flat-square)
+![Issues](https://img.shields.io/github/issues/nikhi1503/block?style=flat-square)
+![Pull Requests](https://img.shields.io/github/issues-pr/nikhi1503/block?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/nikhi1503/block?style=flat-square)
 
 ## 🔙 [Return](#table-of-contents)
 
