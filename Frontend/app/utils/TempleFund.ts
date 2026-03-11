@@ -262,6 +262,24 @@ export const TEMPLE_FUND_ABI = [
     inputs: [
       {
         internalType: "address",
+        name: "temple",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+    ],
+    name: "withdrawEthOnBehalf",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
         name: "token",
         type: "address",
       },
@@ -281,12 +299,12 @@ export const TEMPLE_FUND_ABI = [
 // Dynamic address based on network - use getContractAddresses from networks.ts instead
 export const getTempleFundAddress = (chainId: number): string => {
   const addresses: Record<number, string> = {
-    31337: "0xa85233c63b9ee964add6f2cffe00fd84eb32338f", // Hardhat
-    80002: (process.env.NEXT_PUBLIC_AMOY_FUND_ADDRESS || "0xa85233c63b9ee964add6f2cffe00fd84eb32338f").toLowerCase(),
-    137: (process.env.NEXT_PUBLIC_POLYGON_FUND_ADDRESS || "0xa85233c63b9ee964add6f2cffe00fd84eb32338f").toLowerCase(),
+    31337: "0x610178dA211FEF7D417bC0e6FeD39F05609AD788", // Hardhat - latest deployed address
+    80002: (process.env.NEXT_PUBLIC_AMOY_FUND_ADDRESS || "0x610178dA211FEF7D417bC0e6FeD39F05609AD788").toLowerCase(),
+    137: (process.env.NEXT_PUBLIC_POLYGON_FUND_ADDRESS || "0x610178dA211FEF7D417bC0e6FeD39F05609AD788").toLowerCase(),
   };
   return addresses[chainId] || addresses[31337];
 };
 
 // Fallback for backwards compatibility
-export const TEMPLE_FUND_ADDRESS = "0xa85233c63b9ee964add6f2cffe00fd84eb32338f"; // Default (Hardhat)
+export const TEMPLE_FUND_ADDRESS = "0x610178dA211FEF7D417bC0e6FeD39F05609AD788"; // Default (Hardhat)

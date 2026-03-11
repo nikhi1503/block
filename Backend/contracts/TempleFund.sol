@@ -52,6 +52,18 @@ contract TempleFund {
         emit EthFundsWithdrawn(msg.sender, amount);
     }
 
+    // Allow withdrawal on behalf of a temple (for temple admins)
+    function withdrawEthOnBehalf(address temple, uint256 amount) external {
+        require(temple != address(0), "Invalid temple address");
+        require(amount > 0, "Withdraw amount must be greater than zero");
+        require(ethFunds[temple] >= amount, "Insufficient ETH funds for temple");
+        
+        ethFunds[temple] -= amount;
+        payable(msg.sender).transfer(amount);
+
+        emit EthFundsWithdrawn(temple, amount);
+    }
+
     function getTempleEthBalance(address temple) external view returns (uint256) {
         return ethFunds[temple];
     }

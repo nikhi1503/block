@@ -12,9 +12,9 @@ async function main() {
   const deployed = JSON.parse(fs.readFileSync(addressesPath, "utf8"));
   const contractAddress = deployed.TempleFund.contractAddress;
 
-  // Get signer from private key
-  const provider = new ethers.JsonRpcProvider(process.env.AMOY_RPC_URL);
-  const signer = new ethers.Wallet(process.env.DONOR_PRIVATE_KEY, provider);
+  // Get default signer from Hardhat
+  const [signer] = await ethers.getSigners();
+  console.log("Donor address:", signer.address);
 
   // Load ABI
   const abiPath = path.resolve("artifacts", "contracts", "TempleFund.sol", "TempleFund.json");
@@ -24,7 +24,7 @@ async function main() {
   const fund = new ethers.Contract(contractAddress, contractABI, signer);
 
   // Define temple address and donation amount (in wei)
-  const templeAddress = "0xaD8Cb6a8803AD33990c2C77c1C3414810096f41F"; // replace with actual
+  const templeAddress = "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"; // Shiva Temple wallet
   const amountInEther = "0.01"; // donation amount
 
   // Send donation transaction

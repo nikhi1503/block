@@ -11,14 +11,16 @@ async function main() {
   const deployed = JSON.parse(fs.readFileSync(addressesPath, "utf8"));
   const contractAddress = deployed.TempleFund.contractAddress;
 
-  const provider = new ethers.JsonRpcProvider(process.env.AMOY_RPC_URL);
+  // Use localhost instead of AMOY
+  const provider = new ethers.JsonRpcProvider("http://localhost:8545");
 
   const abiPath = path.resolve("artifacts", "contracts", "TempleFund.sol", "TempleFund.json");
   const contractABI = JSON.parse(fs.readFileSync(abiPath, "utf8")).abi;
 
   const fund = new ethers.Contract(contractAddress, contractABI, provider);
 
-  const templeAddress = "0xaD8Cb6a8803AD33990c2C77c1C3414810096f41F"; // replace
+  // Use Shiva Temple's wallet address
+  const templeAddress = "0x70997970C51812dc3A010C7d01b50e0d17dc79C8";
 
   const balance = await fund.getTempleEthBalance(templeAddress);
   console.log(`Temple ${templeAddress} ETH Balance: ${ethers.formatEther(balance)} ETH`);

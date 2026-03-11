@@ -290,12 +290,22 @@ export default function Withdrawal() {
         TEMPLE_FUND_ABI,
         signer
       );
-      const tx = await contract.withdrawEth(ethers.parseEther(amount));
+      
+      // Call withdrawEthOnBehalf with the temple's blockchain address
+      const tx = await contract.withdrawEthOnBehalf(
+        templeBlockchainAddress,
+        ethers.parseEther(amount)
+      );
       await tx.wait();
       toast.success("Withdrawal successful!");
       setAmount("");
       setEstimatedGasFee(null);
       setEstimatedNetworkFeeFiat(null);
+      
+      // Refresh balance after withdrawal
+      if (templeBlockchainAddress) {
+        fetchTempleBalance(templeBlockchainAddress);
+      }
     } catch (error: any) {
       toast.error(`Transaction failed: ${error?.reason || error?.message}`);
     } finally {
@@ -479,16 +489,16 @@ export default function Withdrawal() {
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Network Fee</span>
                   <span className="font-medium text-gray-800">
-                    {estimatedNetworkFeeFiat ?? "Estimating..."}
+                    {estimatedGasFee ? `${parseFloat(estimatedGasFee).toFixed(6)} ETH` : "Estimating..."}
                   </span>
                 </div>
                 <div className="flex justify-between items-center mt-2">
                   <span className="text-gray-600">You will receive</span>
                   <span className="font-bold text-gray-800">
-                    {amount
+                    {amount && estimatedGasFee
                       ? (
                           Number.parseFloat(amount) -
-                          Number.parseFloat(estimatedNetworkFeeFiat ?? "0")
+                          Number.parseFloat(estimatedGasFee)
                         ).toFixed(4)
                       : "0.0000"}{" "}
                     {
