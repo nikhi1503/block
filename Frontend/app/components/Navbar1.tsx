@@ -133,7 +133,7 @@ export default function Navbar() {
 
                 {/*Logo End*/}
                 <span className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                  Digital Seva
+                  DevTemple
                 </span>
               </div>
             </div>

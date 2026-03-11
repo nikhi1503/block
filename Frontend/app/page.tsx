@@ -87,7 +87,7 @@ export default function Home(){
 
                 {/*Logo End*/}
                 <span className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                  Digital Seva
+                  DevTemple
                 </span>
               </div>
 
@@ -386,7 +386,7 @@ export default function Home(){
               Ready to Transform Temple Donations?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Join thousands of devotees who trust Digital Seva for transparent
+              Join thousands of devotees who trust DevTemple for transparent
               and secure temple donations
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -411,7 +411,7 @@ export default function Home(){
                 <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-lg">🕉</span>
                 </div>
-                <span className="text-2xl font-bold">Digital Seva</span>
+                <span className="text-2xl font-bold">DevTemple</span>
               </div>
               <p className="text-gray-400">
                 Revolutionizing temple fund management through blockchain
@@ -495,7 +495,7 @@ export default function Home(){
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>
-              &copy; 2025 Digital Seva. All rights reserved. Built with devotion
+              &copy; 2026 DevTemple. All rights reserved. Built with devotion
               for digital transparency.
             </p>
           </div>

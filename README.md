@@ -1,6 +1,6 @@
 <div align="center">
 
-# BLOCKCHAIN-BASED-FUND-MANAGEMENT-SYSTEM-FOR-INDIAN-TEMPLES
+# Decentralized Secure Transaction System using Blockchain for Temple Fund Management
 
 **_Empowering Trust, Securing Donations, Transforming Temples_**
 
@@ -61,9 +61,9 @@
 
 ## Overview
 
-The Blockchain-Based Fund Management System for Indian Temples is an modernn platform that harnesses blockchain technology to facilitate secure, transparent management of temple donations and funds. It integrates smart contracts to ensure transparency in fund allocation and time-locked transactions, ensuring trustless operations. The system supports role-based access control, real-time notifications via WebSocket and systematic workflows, making it a modern solution for modern temple administration.
+The Decentralized Secure Transaction System using Blockchain for Temple Fund Management is a modern platform that harnesses blockchain technology to facilitate secure, transparent management of temple donations and funds. It integrates smart contracts to ensure transparency in fund allocation and time-locked transactions, ensuring trustless operations. The system supports role-based access control, real-time notifications via WebSocket and systematic workflows, making it a modern solution for modern temple administration.
 
-### 📌 **Why Blockchain-Based-Fund-Management-System-For-Indian-Temples**❓
+### 📌 **Why Decentralized Secure Transaction System using Blockchain for Temple Fund Management**❓
 This project aims to revolutionize temple fund management by providing a decentralized, tamper-proof ecosystem. The core features include:
 
 - 🔗 **Blockchain Integration**: Ensures transparent, immutable records of donations and fund allocations
@@ -77,7 +77,7 @@ This project aims to revolutionize temple fund management by providing a decentr
 
 ### 💡 **What the Application Does❓**
 
-Our application is a **Blockchain-Based Fund Management System for Indian Temples**. It allows devotees to donate securely in cryptocurrency (ETH) to registered temples, ensuring **full transparency, traceability, and trust**. Temple administrators can view donation histories, generate **weekly and monthly reports**, and securely manage fund withdrawals. The platform replaces manual bookkeeping and reduces fraud risks inherent in traditional temple donation systems.
+Our application is a **Decentralized Secure Transaction System using Blockchain for Temple Fund Management**. It allows devotees to donate securely in cryptocurrency (ETH) to registered temples, ensuring **full transparency, traceability, and trust**. Temple administrators can view donation histories, generate **weekly and monthly reports**, and securely manage fund withdrawals. The platform replaces manual bookkeeping and reduces fraud risks inherent in traditional temple donation systems.
 
 - **Project System Architecture**
   ![system architecture](./assets/images/architecture.jpg)
@@ -123,7 +123,7 @@ git clone https://github.com/nikhi1503/block
 
 #### Navigate to the project directory:
 ```bash
-cd Blockchain-Based-Fund-Management-System-For-Indian-Temples
+cd Decentralized-Secure-Transaction-System-Blockchain-Temple
 ```
 
 #### Install the dependencies:
@@ -206,7 +206,7 @@ All contributors have worked collaboratively on:
 
 
 ## License
-This project is licensed under the MIT License © 2025.  
+This project is licensed under the MIT License © 2026 DevTemple. All rights reserved. Built with devotion for digital transparency.  
 See the [LICENSE](./LICENSE) file for details.
 
 ## Badges
@@ -222,6 +222,6 @@ See the [LICENSE](./LICENSE) file for details.
 
 ---
 
-*This project is designed to bring transparency, security, and efficiency to temple fund management through blockchain technology.*
+*This Decentralized Secure Transaction System using Blockchain for Temple Fund Management is designed to bring transparency, security, and efficiency to temple fund management through blockchain technology.*
 
 </div>

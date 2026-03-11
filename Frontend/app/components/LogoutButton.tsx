@@ -72,34 +72,60 @@ export default function LogoutButton({
         headers["Authorization"] = `Bearer ${accessToken}`;
       }
       
+      console.log("Attempting logout with URL:", logoutUrl);
+      console.log("Headers:", headers);
+      
       const response = await fetch(logoutUrl, {
         method: "POST",
         credentials: "include",
         headers,
       });
 
-      const contentType = response.headers.get("content-type");
-      if (contentType && contentType.includes("application/json")) {
-        const result = await response.json();
+      console.log("Logout response status:", response.status);
+      console.log("Logout response headers:", response.headers);
 
-        if (!response.ok) {
-          toast.error(result.message || "Logout failed");
-          return;
-        }
+      // Clear storage immediately
+      sessionStorage.clear();
+      localStorage.clear();
 
-        sessionStorage.clear();
-        localStorage.clear();
-        toast.success("Logged out successfully");
-        setTimeout(() => {
-          router.push(redirectTo);
-        }, 1500);
-      } else {
-        const text = await response.text();
-        console.error("Unexpected response format:", text);
-        toast.error("Unexpected server response");
+      if (!response.ok) {
+        console.warn("Logout API returned non-OK status:", response.status);
+        toast.error(`Logout failed with status ${response.status}`);
+        return;
       }
+
+      const contentType = response.headers.get("content-type");
+      
+      try {
+        if (contentType && contentType.includes("application/json")) {
+          const result = await response.json();
+          console.log("Logout API response:", result);
+          toast.success("Logged out successfully");
+        } else {
+          console.log("Non-JSON response received");
+          toast.success("Logged out successfully");
+        }
+      } catch (parseError) {
+        console.warn("Could not parse response as JSON:", parseError);
+        toast.success("Logged out successfully");
+      }
+
+      // Redirect after short delay
+      setTimeout(() => {
+        console.log("Redirecting to:", redirectTo);
+        router.push(redirectTo);
+      }, 1000);
+      
     } catch (error: any) {
+      console.error("Logout error:", error);
+      // Still clear storage even if API call fails
+      sessionStorage.clear();
+      localStorage.clear();
       toast.error(error.message || "Logout failed");
+      // Redirect anyway after delay
+      setTimeout(() => {
+        router.push(redirectTo);
+      }, 1500);
     }
   };
 

@@ -380,7 +380,7 @@ export default function TempleAdminLogin() {
         {/* Footer */}
         <div className="text-center mt-8 space-y-3">
           <p className="text-gray-700 font-medium">
-            © 2025 Temple Management System
+            © 2026 DevTemple. All rights reserved.
           </p>
           <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
             <Shield className="w-4 h-4 text-orange-600" />
